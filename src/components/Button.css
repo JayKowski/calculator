@@ -1,7 +1,9 @@
 .button {
   height: 100%;
-  text-align: center;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: auto;
   color: #000;
   border: 1px solid #a4a4a4;
   line-height: 95px;

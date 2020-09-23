@@ -4,7 +4,7 @@ import './ButtonPanel.css';
 
 export default function ButtonPanel() {
   return (
-    <div className="">
+    <div className="groups">
       <div className="group1">
         <Button name="AC" color="#CDCDCD" />
         <Button name="+/-" color="#CDCDCD" />
