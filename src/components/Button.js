@@ -16,7 +16,7 @@ function Button(props) {
     backgroundColor: color,
   };
 
-  return <div style={wide ? wideStyle : normalStyle} className="button"><span>{name}</span></div>;
+  return <div style={wide ? wideStyle : normalStyle} className="button" onClick=""><span>{name}</span></div>;
 }
 
 Button.defaultProps = {
@@ -26,7 +26,8 @@ Button.defaultProps = {
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   color: PropTypes.string,
-  wide: PropTypes.bool.isRequired,
+  // eslint-disable-next-line react/require-default-props
+  wide: PropTypes.bool,
 };
 
 export default Button;

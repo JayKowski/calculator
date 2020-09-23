@@ -1,4 +1,5 @@
-import Big from 'big.mjs';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
   let res = 0;
