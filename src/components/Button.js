@@ -21,12 +21,13 @@ function Button(props) {
 
 Button.defaultProps = {
   color: 'orange',
+  wide: false,
 };
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   color: PropTypes.string,
-  wide: PropTypes.bool.isRequired,
+  wide: PropTypes.bool,
 };
 
 export default Button;
