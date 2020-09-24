@@ -1,4 +1,5 @@
 import React from 'react';
+import './Display.css';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
 
@@ -6,7 +7,7 @@ function Display(props) {
   const { result } = props;
   return (
     <div className="result-dis">
-      <span>{result}</span>
+      <div className="res-text">{result}</div>
     </div>
   );
 }
