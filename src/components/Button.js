@@ -7,16 +7,16 @@ function Button(props) {
   const { name, wide, color } = props;
 
   const wideStyle = {
-    width: '49.7%',
+    flexBasis: '50%',
     backgroundColor: color,
   };
 
   const normalStyle = {
-    width: '24.7%',
+    flexBasis: '25%',
     backgroundColor: color,
   };
 
-  return <div style={wide ? wideStyle : normalStyle} className="button"><span>{name}</span></div>;
+  return <div style={wide ? wideStyle : normalStyle} className="button">{name}</div>;
 }
 
 Button.defaultProps = {

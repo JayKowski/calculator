@@ -1,15 +1,15 @@
 .result-dis {
-    display: flex;
-    background-color: #808080;
-    height: 100px;
-    flex-direction: column;
+  display: flex;
+  background-color: #808080;
+  height: 100px;
+  flex-direction: column;
 }
 
 .result-dis .res-text {
-    font-weight: bold;
-    color: #FFFFFF;
-    text-align: right;
-    font-size: 40px;
-    padding-top: 20px;
-    padding-right: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-align: right;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-right: 10px;
 }

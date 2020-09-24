@@ -1,8 +1,13 @@
 .panel {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: row;
 }
 
-.group1, .group2, .group3, .group4, .group5 {
-    height: 100px;
+.group1,
+.group2,
+.group3,
+.group4,
+.group5 {
+  height: 100px;
+  display: flex;
 }
