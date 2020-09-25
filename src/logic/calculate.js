@@ -1,18 +1,17 @@
-/* eslint-disable */
-
 import operate from './operate';
+
 const calculate = ({ total, next, operation }, btnName) => {
-  const nums = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-  const ops = ["/", "+", "-", "X", "%"];
+  const nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const ops = ['/', '+', '-', 'X', '%'];
 
   if (ops.includes(btnName)) {
-    return { total: next, next: "", operation: btnName };
+    return { total: next, next: '', operation: btnName };
   }
 
   if (nums.includes(btnName)) {
     return {
       total,
-      next: ((next && next.match(/[a-z]/i) ? "" : next) || "") + btnName,
+      next: ((next && next.match(/[a-z]/i) ? '' : next) || '') + btnName,
       operation,
     };
   }
