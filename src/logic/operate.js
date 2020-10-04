@@ -7,7 +7,6 @@ const operate = (numberOne, numberTwo, operation) => {
   const sNum = Big(Number(numberTwo));
 
   if (operation === '+') {
-    console.log();
     res = Big(fNum).plus(sNum).toString();
   } else if (operation === '-') {
     res = (fNum - sNum).toString();
