@@ -2,18 +2,23 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  const fNum = Big(numberOne);
-  const sNum = Big(numberTwo);
-
   let res = 0;
+  const fNum = Big(Number(numberOne));
+  const sNum = Big(Number(numberTwo));
+
   if (operation === '+') {
-    res = (fNum + sNum).toString();
+    console.log();
+    res = Big(fNum).plus(sNum).toString();
   } else if (operation === '-') {
     res = (fNum - sNum).toString();
   } else if (operation === 'X') {
     res = (fNum * sNum).toString();
   } else if (operation === '/') {
-    res = (fNum / sNum).toString();
+    if ((fNum === 0) || (sNum === 0)) {
+      res = 'error. cannot divide by zero';
+    } else {
+      res = (fNum / sNum).toString();
+    }
   } else if (operation === '%') {
     res = ((fNum / sNum) * 100).toString();
   }
